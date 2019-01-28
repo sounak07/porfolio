@@ -28,8 +28,8 @@ body {
 }
 
 .id {
-  margin-top: 500px;
-  padding: 70px 0;
+  margin-top: 50px;
+  padding: 90px 0;
   background-color: white;
   width: 100%;
 }
@@ -107,17 +107,17 @@ body {
   padding: 0 15px;
 }
 
-.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show > .nav-link {
+.navbar-dark .navbar-nav .show>.nav-link {
   font-weight: bold;
 }
 
-.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show > .nav-link:hover {
+.navbar-dark .navbar-nav .show>.nav-link:hover {
   font-weight: 800;
 }
 
