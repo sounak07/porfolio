@@ -1,30 +1,11 @@
-body {
-  /* position: relative; */
-  font-family: 'Kodchasan', sans-serif;
-  background: url('images/compe-min.jpg') no-repeat center fixed;
-  /* background-attachment: fixed; */
-  /* bac */
-  /* background-repeat: no-repeat; */
-  background-size: cover;
+html {
+  scroll-behavior: smooth;
 }
 
-.cover1 {
-  /* box-shadow: inset 0 0 200px #000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: table;
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%; */
+body {
 
-  /* margin-top: 200px; */
-  /* margin: 200px auto; */
-  text-align: center;
-  color: white;
-  font-weight: 700;
-  margin: 200px auto;
+  font-family: 'Kodchasan', sans-serif;
+
 }
 
 .id {
@@ -456,6 +437,123 @@ h5 {
   float: left;
 }
 
+a.banner-button {
+  background: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border: 2px solid #fff;
+  padding: 10px 25px;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  transition: 0.5s all;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+a.banner-button1 {
+  background: #00BCD4;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 10px 23px;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  transition: 0.5s all;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+a.banner-button2 {
+  background: #3369e7;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 10px 23px;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  transition: 0.5s all;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.banner-bottom,
+.banner,
+.inner-sec-layer,
+.contact,
+.skills,
+.edu-exp,
+.projects {
+  padding: 4em 5em;
+}
+
+.banner {
+  background: url(images/compe.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  background: #000;
+}
+
+.banner-info {
+  padding: 4em 0;
+}
+
+h2.heading-banner {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+h2.heading-banner span {
+  display: block;
+  font-weight: 600;
+}
+
+.banner-info p {
+  color: #ccc;
+  max-width: 550px;
+}
+
+h2.heading,
+h3.heading {
+  font-size: 36px;
+  color: #000;
+  font-weight: 100;
+}
+
+h2.heading span,
+h3.heading span {
+  width: 50px;
+  height: 2px;
+  background: #333;
+  display: inline-block;
+}
+
 @media (max-width: 767px) {
   #footer h5 {
     padding-left: 0;
@@ -463,4 +561,61 @@ h5 {
     padding-bottom: 0px;
     margin-bottom: 10px;
   }
+
+  .banner-bottom,
+  .banner,
+  .inner-sec-layer,
+  .contact,
+  .skills,
+  .edu-exp,
+  .projects {
+    padding: 4em 3em;
+  }
+
+  .banner-info {
+    padding: 0em 0;
+  }
+
+  h2.heading-banner {
+    font-size: 35px;
+  }
+}
+
+@media(max-width: 568px) {
+  section.banner .col-md-12 {
+    padding: 0;
+  }
+}
+
+@media(max-width: 480px) {
+
+
+  a.banner-button2,
+  a.banner-button1,
+  a.banner-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+}
+
+@media(max-width: 415px) {
+
+  .banner-bottom,
+  .banner,
+  .inner-sec-layer {
+    padding: 3em 1.5em;
+  }
+
+
+  h2.heading-banner {
+    font-size: 30px;
+  }
+
+  .inner-w3pvt-wrap h4 {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+  }
+
+
 }
