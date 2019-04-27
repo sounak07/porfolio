@@ -1,7 +1,7 @@
 body {
   /* position: relative; */
   font-family: 'Kodchasan', sans-serif;
-  background: url('images/compe.jpg') no-repeat center fixed;
+  background: url('images/compe-min.jpg') no-repeat center fixed;
   /* background-attachment: fixed; */
   /* bac */
   /* background-repeat: no-repeat; */
@@ -171,7 +171,7 @@ body {
 
 .skills {
   padding: 70px 0;
-  background: url('images/new.jpg');
+  background: url('images/new-min.jpg');
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
