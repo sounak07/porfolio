@@ -123,6 +123,7 @@ body {
   /* margin-top: 5px; */
   width: 50px;
   height: 50px;
+  background-image: url(images/fd.png);
 }
 
 .navbar.transparent.navbar-expand-md.navbar-dark.sidebarNavigation {
@@ -497,7 +498,7 @@ a.banner-button2 {
 }
 
 .banner {
-  background: url(images/compe.jpg) no-repeat center;
+  background: url(images/compe-min.jpg) no-repeat center;
   background-size: cover;
   position: relative;
 }
