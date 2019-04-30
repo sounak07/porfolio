@@ -1,557 +1,727 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/ico" href="images/gmail.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-reboot.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kodchasan"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/button.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <title>Sounak Gupta</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="icon" type="image/ico" href="images/logo.png">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-reboot.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/button.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
-  <title>Sounak Gupta</title>
-</head>
+  <body class="text-center">
+    <nav
+      class="navbar transparent navbar-expand-md navbar-dark sidebarNavigation"
+      data-sidebarClass="navbar-dark bg-dark"
+      id="menu"
+    >
+      <a class="navbar-brand" href="#">
+        <p>
+          <img
+            border="0"
+            id="logo"
+            src="images/gmail.png"
+            alt="logo"
+            width="30"
+            height="30"
+          />
+        </p>
+      </a>
+      <button
+        class="navbar-toggler leftNavbarToggler"
+        id="icon"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<body class="text-center">
-  <nav class="navbar transparent navbar-expand-md navbar-dark sidebarNavigation" data-sidebarClass="navbar-dark bg-dark"
-    id="menu">
-    <a class="navbar-brand" href="#">
-      <p>
-        <img border="0" id="logo" src="images/logo.png" alt="logo" width="30" height="30" />
-      </p>
-    </a>
-    <button class="navbar-toggler leftNavbarToggler" id="icon" type="button" data-toggle="collapse"
-      data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">MySkills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">MyWork</a>
+          </li>
+        </ul>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
+        <!--            <button class="ui inverted primary button">Sign up</button>-->
 
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#team">MyWork</a>
-        </li>
-      </ul>
-
-      <!--            <button class="ui inverted primary button">Sign up</button>-->
-
-      <!-- <a href=""><button type="button" class="btn btn-outline-success" style="margin: 8px;min-width:100px;">
+        <!-- <a href=""><button type="button" class="btn btn-outline-success" style="margin: 8px;min-width:100px;">
           My Resume
         </button></a> -->
-    </div>
-  </nav>
-
-  <!-- banner -->
-  <section class="banner">
-    <div class="col-md-12">
-      <div class="banner-info">
-        <h2 class="heading-banner text-capitalize">
-          Hi. I'm <span>Sounak Gupta!</span>
-        </h2>
-        <p class=" mt-3">
-          Integer porttitor <span>mollisar </span>lorem, at molestie arcu
-          pulvinar ut. Proin ac fermentum est. Cras mi ipsum, consectetur.
-          Integer at tellus in ex iaculis accumsan nec tristique justo.
-          Aliquam dapibus iaculis enim, a dapibus nibh convallis scelerisque.
-        </p>
-        -->
-        <a href="#about" class="banner-button btn mt-md-5 mt-3 scroll">Read More</a>
       </div>
-    </div>
-  </section>
-  <!-- //banner -->
+    </nav>
 
-  <!-- about us -->
-
-  <section class="banner-bottom" id="about">
-    <div class="inner-sec">
-      <div class="row middle-grids">
-        <div class="col-lg-7 advantage-grid-info">
-          <div class="advantage_left">
-            <h2 class="heading text-capitalize mb-4">
-              About Me <span></span>
-            </h2>
-            <h4>I'm a Professional Web Developer</h4>
-            <p class="mb-4">
-              Nulla pellentesque mi non laoreet eleifend. Integer sed
-              porttitor mollisar lorem, at molestie arcust pulvinar ut. Proina
-              fermentum est. Cras mist ipsum, consectetur ipsum in, egestas
-              tellus ipsu vestibulum tellus accumsan nec tristique justo.
-            </p>
-            <a target="_blank"
-              href="https://drive.google.com/uc?authuser=0&id=1AjTbujhVbxzNFDLIEP39brXzeanVd7ly&export=download"
-              class="banner-button1 btn">Download Cv</a>
-            <a href="#contact" class="banner-button2 btn">Hire Me</a>
-          </div>
-        </div>
-        <div class="col-lg-5 advantage-grid-info1">
-          <div class="advantage_left1 mt-lg-0 mt-4">
-            <img style="margin-top:20px;" src="images/mw.jpg" height="300" width="300" class="img-circle" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- //about us -->
-
-  <div class="skills">
-    <section class="container">
-      <h3 class="cover-heading">MY SKILLS</h3>
-
-      <hr />
-      <div class="row">
-        <div class="col"><i class="devicon-nodejs-plain colored"></i></div>
-        <div class="col"><i class="devicon-php-plain colored"></i></div>
-        <div class="col">
-          <i class="devicon-express-original-wordmark"></i>
-        </div>
-        <div class="col">
-          <i class="devicon-react-original-wordmark colored"></i>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <i class="devicon-mongodb-plain-wordmark colored"></i>
-        </div>
-
-        <div class="col">
-          <i class="devicon-mysql-plain-wordmark colored"></i>
-        </div>
-        <div class="col">
-          <i class="devicon-html5-plain-wordmark colored"></i>
-        </div>
-        <div class="col">
-          <i class="devicon-css3-plain-wordmark colored"></i>
-        </div>
-        <div class="col">
-          <i class="devicon-bootstrap-plain-wordmark colored"></i>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <i class="devicon-javascript-plain colored"></i>
-        </div>
-        <div class="col">
-          <i class="devicon-jquery-plain-wordmark colored"></i>
-        </div>
-        <div class="col">
-          <i class="devicon-wordpress-plain-wordmark"></i>
+    <!-- banner -->
+    <section class="banner">
+      <div class="col-md-12">
+        <div class="banner-info">
+          <h2 class="heading-banner text-capitalize">
+            Hi. I'm <span>Sounak Gupta!</span>
+          </h2>
+          <p class=" mt-3">
+            Integer porttitor <span>mollisar </span>lorem, at molestie arcu
+            pulvinar ut. Proin ac fermentum est. Cras mi ipsum, consectetur.
+            Integer at tellus in ex iaculis accumsan nec tristique justo.
+            Aliquam dapibus iaculis enim, a dapibus nibh convallis scelerisque.
+          </p>
+          -->
+          <a href="#about" class="banner-button btn mt-md-5 mt-3 scroll"
+            >Read More</a
+          >
         </div>
       </div>
     </section>
-  </div>
+    <!-- //banner -->
 
-  <section id="team" class="pb-5">
-    <div class="container">
-      <h5 class="section-title h1">MY WORK</h5>
-      <hr color="#ccc" />
-      <div class="row">
-        <!-- Team member -->
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-            <div class="mainflip">
-              <div class="frontside">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <h4 class="card-title">TravelDen</h4>
-                    <hr />
-                    <div class="main">
-                      <p class="profession">
-                        <i class="fa fa-quote-left"></i> It's a travel destination review website built right on top of
-                        node.js, express, mongodb.It lets
-                        user create, update, delete posts.User can also add comments in the posts.
-                      </p>
-                    </div>
-                    <a href="" class="btn btn-primary btn-sm"><i class="far fa-hand-point-right"></i> More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="backside">
-                <div class="card">
-                  <div class="card-body text-center mt-4">
-                    <h4 class="card-title">Tech Stack</h4>
-                    <hr />
-                    <p class="text-center">
-                      <i class="fa fa-quote-left"></i> Node.js, express, mongodb,Bootstrap and Sementic UI.
-                    </p>
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank"
-                          href="https://github.com/sounak07/TravelDen">
-                          <i style="font-size:30px;" class="fab fa-github"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ./Team member -->
-        <!-- Team member -->
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-            <div class="mainflip">
-              <div class="frontside">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <h4 class="card-title">Node-todo-api</h4>
-                    <hr />
-                    <div class="main">
-                      <p class="profession">
-                        <i class="fa fa-quote-left"></i> It's a simple api built right on top of node.js, express,
-                        mongodb.It features routes for create, delete, update todos. It's uses jwt auth system.This api
-                        also features unit testing using mocha.
-                      </p>
-                    </div>
-                    <a href="" class="btn btn-primary btn-sm"><i class="far fa-hand-point-right"></i> More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="backside">
-                <div class="card">
-                  <div class="card-body text-center mt-4">
-                    <h4 class="card-title">Tech Stack</h4>
-                    <hr />
-                    <p class="text-center">
-                      <i class="fa fa-quote-left"></i> Node.js, express, mongodb,mocha testing.
-                    </p>
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank"
-                          href="https://github.com/sounak07/node-todo-api">
-                          <i style="font-size:30px;" class="fab fa-github"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ./Team member -->
-        <!-- Team member -->
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-            <div class="mainflip">
-              <div class="frontside">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <h4 class="card-title">Chat App</h4>
-                    <hr />
-                    <div class="main">
-                      <p class="profession">
-                        <i class="fa fa-quote-left"></i> It's a simple chat app built using node and socket.io library.
-                        It lets the users join chat rooms just with a display name.Users can send text messages and
-                        their current location to other users in the chat room.
-                      </p>
-                    </div>
-                    <a href="" class="btn btn-primary btn-sm"><i class="far fa-hand-point-right"></i> More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="backside">
-                <div class="card">
-                  <div class="card-body text-center mt-4">
-                    <h4 class="card-title">Tech Stack</h4>
-                    <hr />
-                    <p class="text-center">
-                      <i class="fa fa-quote-left"></i> Node.js, express, mongodb,socket.io, Bootstrap and Sementic UI.
-                    </p>
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank"
-                          href="https://github.com/sounak07/chat-app">
-                          <i style="font-size:30px;" class="fab fa-github"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ./Team member -->
-        <!-- ./Team member -->
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-            <div class="mainflip">
-              <div class="frontside">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <h4 class="card-title">MoviePedia</h4>
-                    <hr />
-                    <div class="main">
-                      <p class="profession">
-                        <i class="fa fa-quote-left"></i> It's a small search portal for movies and TV series. It's built
-                        using node.js and omdb api. Users can search movies and TV series with their names and get
-                        details.
-                      </p>
-                    </div>
-                    <a href="" class="btn btn-primary btn-sm"><i class="far fa-hand-point-right"></i> More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="backside">
-                <div class="card">
-                  <div class="card-body text-center mt-4">
-                    <h4 class="card-title">Tech Stack</h4>
-                    <hr />
-                    <p class="text-center">
-                      <i class="fa fa-quote-left"></i> Node.js, express,omdb api, Bootstrap and Sementic UI.
-                    </p>
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank"
-                          href="https://github.com/sounak07/MoviePedia">
-                          <i style="font-size:30px;" class="fab fa-github"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- about us -->
 
-        <!-- ./Team member -->
-        <!-- ./Team member -->
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-            <div class="mainflip">
-              <div class="frontside">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <h4 class="card-title">TravelDen</h4>
-                    <hr />
-                    <div class="main">
-                      <p class="profession">
-                        <i class="fa fa-quote-left"></i> Its a code player that lets you combine html , css and
-                        javascript to generate the output.
-                      </p>
-                    </div>
-                    <a href="" class="btn btn-primary btn-sm"><i class="far fa-hand-point-right"></i> More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="backside">
-                <div class="card">
-                  <div class="card-body text-center mt-4">
-                    <h4 class="card-title">Tech Stack</h4>
-                    <hr />
-                    <p class="text-center">
-                      <i class="fa fa-quote-left"></i> HTML, CSS and javascript.
-                    </p>
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank"
-                          href="https://github.com/sounak07/CodePlayer">
-                          <i style="font-size:30px;" class="fab fa-github"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+    <section class="banner-bottom" id="about">
+      <div class="inner-sec">
+        <div class="row middle-grids">
+          <div class="col-lg-7 advantage-grid-info">
+            <div class="advantage_left">
+              <h2 class="heading text-capitalize mb-4">
+                About Me <span></span>
+              </h2>
+              <h4>I'm a Professional Web Developer</h4>
+              <p class="mb-4">
+                Nulla pellentesque mi non laoreet eleifend. Integer sed
+                porttitor mollisar lorem, at molestie arcust pulvinar ut. Proina
+                fermentum est. Cras mist ipsum, consectetur ipsum in, egestas
+                tellus ipsu vestibulum tellus accumsan nec tristique justo.
+              </p>
+              <a
+                target="_blank"
+                href="https://drive.google.com/uc?authuser=0&id=1AjTbujhVbxzNFDLIEP39brXzeanVd7ly&export=download"
+                class="banner-button1 btn"
+                >Download Cv</a
+              >
+              <a href="#contact" class="banner-button2 btn">Hire Me</a>
+            </div>
+          </div>
+          <div class="col-lg-5 advantage-grid-info1">
+            <div class="advantage_left1 mt-lg-0 mt-4">
+              <img
+                style="margin-top:20px;"
+                src="images/mw.jpg"
+                height="300"
+                width="300"
+                class="img-circle"
+                alt=""
+              />
             </div>
           </div>
         </div>
-
-        <!-- ./Team member -->
-        <!-- ./Team member -->
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-            <div class="mainflip">
-              <div class="frontside">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <h4 class="card-title">Color-Guessing-Game</h4>
-                    <hr />
-                    <div class="main">
-                      <p class="profession">
-                        <i class="fa fa-quote-left"></i> Its a rgb color guessing game
-                        where u get a random rgb code and you have to guess the correct color from the options given.
-
-                      </p>
-                    </div>
-                    <a href="" class="btn btn-primary btn-sm"><i class="far fa-hand-point-right"></i> More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="backside">
-                <div class="card">
-                  <div class="card-body text-center mt-4">
-                    <h4 class="card-title">Tech Stack</h4>
-                    <hr />
-                    <p class="text-center">
-                      <i class="fa fa-quote-left"></i> HTML, CSS and javascript.
-                    </p>
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank"
-                          href="https://github.com/sounak07/Color-Guessing-Game">
-                          <i style="font-size:30px;" class="fab fa-github"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ./Team member -->
       </div>
+    </section>
+    <!-- //about us -->
+
+    <div class="skills" id="skill">
+      <section class="container">
+        <h3 class="cover-heading">MY SKILLS</h3>
+
+        <hr />
+        <div class="row">
+          <div class="col"><i class="devicon-nodejs-plain colored"></i></div>
+          <div class="col"><i class="devicon-php-plain colored"></i></div>
+          <div class="col">
+            <i class="devicon-express-original-wordmark"></i>
+          </div>
+          <div class="col">
+            <i class="devicon-react-original-wordmark colored"></i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+          </div>
+
+          <div class="col">
+            <i class="devicon-mysql-plain-wordmark colored"></i>
+          </div>
+          <div class="col">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+          </div>
+          <div class="col">
+            <i class="devicon-css3-plain-wordmark colored"></i>
+          </div>
+          <div class="col">
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+          <div class="col">
+            <i class="devicon-jquery-plain-wordmark colored"></i>
+          </div>
+          <div class="col">
+            <i class="devicon-wordpress-plain-wordmark"></i>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
 
-  <!-- contact section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="contact-top">
-        <h1>Contact Me</h1>
-      </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="contact-left-info">
-            <h5>Address</h5>
-            <p>House No,65, Cooch Behar, West Bengal 736179 India</p>
+    <section id="team" class="pb-5">
+      <div class="container">
+        <h5 class="section-title h1">MY WORK</h5>
+        <hr />
+        <div class="row">
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div
+              class="image-flip"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h4 class="card-title">TravelDen</h4>
+                      <hr />
+                      <div class="main">
+                        <p class="profession">
+                          <i class="fa fa-quote-left"></i> It's a travel
+                          destination review website built right on top of
+                          node.js, express, mongodb.It lets user create, update,
+                          delete posts.User can also add comments in the posts.
+                        </p>
+                      </div>
+                      <a href="" class="btn btn-primary btn-sm"
+                        ><i class="far fa-hand-point-right"></i> More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Tech Stack</h4>
+                      <hr />
+                      <p class="text-center">
+                        <i class="fa fa-quote-left"></i> Node.js, express,
+                        mongodb,Bootstrap and Sementic UI.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="social-icon text-xs-center"
+                            target="_blank"
+                            href="https://github.com/sounak07/TravelDen"
+                          >
+                            <i
+                              style="font-size:30px;"
+                              class="fab fa-github"
+                            ></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ./Team member -->
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div
+              class="image-flip"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h4 class="card-title">Node-todo-api</h4>
+                      <hr />
+                      <div class="main">
+                        <p class="profession">
+                          <i class="fa fa-quote-left"></i> It's a simple api
+                          built right on top of node.js, express, mongodb.It
+                          features routes for create, delete, update todos. It's
+                          uses jwt auth system.This api also features unit
+                          testing using mocha.
+                        </p>
+                      </div>
+                      <a href="" class="btn btn-primary btn-sm"
+                        ><i class="far fa-hand-point-right"></i> More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Tech Stack</h4>
+                      <hr />
+                      <p class="text-center">
+                        <i class="fa fa-quote-left"></i> Node.js, express,
+                        mongodb,mocha testing.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="social-icon text-xs-center"
+                            target="_blank"
+                            href="https://github.com/sounak07/node-todo-api"
+                          >
+                            <i
+                              style="font-size:30px;"
+                              class="fab fa-github"
+                            ></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ./Team member -->
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div
+              class="image-flip"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h4 class="card-title">Chat App</h4>
+                      <hr />
+                      <div class="main">
+                        <p class="profession">
+                          <i class="fa fa-quote-left"></i> It's a simple chat
+                          app built using node and socket.io library. It lets
+                          the users join chat rooms just with a display
+                          name.Users can send text messages and their current
+                          location to other users in the chat room.
+                        </p>
+                      </div>
+                      <a href="" class="btn btn-primary btn-sm"
+                        ><i class="far fa-hand-point-right"></i> More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Tech Stack</h4>
+                      <hr />
+                      <p class="text-center">
+                        <i class="fa fa-quote-left"></i> Node.js, express,
+                        mongodb,socket.io, Bootstrap and Sementic UI.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="social-icon text-xs-center"
+                            target="_blank"
+                            href="https://github.com/sounak07/chat-app"
+                          >
+                            <i
+                              style="font-size:30px;"
+                              class="fab fa-github"
+                            ></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ./Team member -->
+          <!-- ./Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div
+              class="image-flip"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h4 class="card-title">MoviePedia</h4>
+                      <hr />
+                      <div class="main">
+                        <p class="profession">
+                          <i class="fa fa-quote-left"></i> It's a small search
+                          portal for movies and TV series. It's built using
+                          node.js and omdb api. Users can search movies and TV
+                          series with their names and get details.
+                        </p>
+                      </div>
+                      <a href="" class="btn btn-primary btn-sm"
+                        ><i class="far fa-hand-point-right"></i> More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Tech Stack</h4>
+                      <hr />
+                      <p class="text-center">
+                        <i class="fa fa-quote-left"></i> Node.js, express,omdb
+                        api, Bootstrap and Sementic UI.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="social-icon text-xs-center"
+                            target="_blank"
+                            href="https://github.com/sounak07/MoviePedia"
+                          >
+                            <i
+                              style="font-size:30px;"
+                              class="fab fa-github"
+                            ></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="contact-left-info">
-            <h5>Call Me</h5>
-            <a style="text-decoration: none; color: rgb(156, 165, 165);" href="tel:+917001861322">
-              <p>
-                <i style="color: rgb(39, 157, 236); font-size: 25px;" class="fa fa-mobile" aria-hidden="true"></i>
-                + 91-7001861322
-              </p>
-            </a>
-
-            <a target="_blank" style="text-decoration: none; color: rgb(156, 165, 165);"
-              href="https://wa.me/917407034208">
-              <p>
-                <i class="fab fa-whatsapp" style="color: rgb(37, 211, 102); font-size: 25px;"></i>
-                + 91-7407034208
-              </p>
-            </a>
+          <!-- ./Team member -->
+          <!-- ./Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div
+              class="image-flip"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h4 class="card-title">TravelDen</h4>
+                      <hr />
+                      <div class="main">
+                        <p class="profession">
+                          <i class="fa fa-quote-left"></i> Its a code player
+                          that lets you combine html , css and javascript to
+                          generate the output.
+                        </p>
+                      </div>
+                      <a href="" class="btn btn-primary btn-sm"
+                        ><i class="far fa-hand-point-right"></i> More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Tech Stack</h4>
+                      <hr />
+                      <p class="text-center">
+                        <i class="fa fa-quote-left"></i> HTML, CSS and
+                        javascript.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="social-icon text-xs-center"
+                            target="_blank"
+                            href="https://github.com/sounak07/CodePlayer"
+                          >
+                            <i
+                              style="font-size:30px;"
+                              class="fab fa-github"
+                            ></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="contact-left-info">
-            <h5>Email</h5>
-            <a style="text-decoration: none; color: rgb(156, 165, 165);" href="mailto:sounakume@gmail.com?Subject=Hello"
-              target="_top">
-              <p>
-                <img border="0" alt="Gmail" src="images/gmail.png" width="20" height="20" />
-                sounakume@gmail.com
-              </p>
-            </a>
+          <!-- ./Team member -->
+          <!-- ./Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div
+              class="image-flip"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h4 class="card-title">Color-Guessing-Game</h4>
+                      <hr />
+                      <div class="main">
+                        <p class="profession">
+                          <i class="fa fa-quote-left"></i> Its a rgb color
+                          guessing game where u get a random rgb code and you
+                          have to guess the correct color from the options
+                          given.
+                        </p>
+                      </div>
+                      <a href="" class="btn btn-primary btn-sm"
+                        ><i class="far fa-hand-point-right"></i> More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Tech Stack</h4>
+                      <hr />
+                      <p class="text-center">
+                        <i class="fa fa-quote-left"></i> HTML, CSS and
+                        javascript.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="social-icon text-xs-center"
+                            target="_blank"
+                            href="https://github.com/sounak07/Color-Guessing-Game"
+                          >
+                            <i
+                              style="font-size:30px;"
+                              class="fab fa-github"
+                            ></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- ./Team member -->
         </div>
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <!-- /.navbar-collapse -->
-
-          <div class="contact-form">
-            <form name="contact" data-netlify="true" method="POST">
-              <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Name</label>
-                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder=""
-                      required />
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder=""
-                      required />
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Your Message</label>
-                    <textarea rows="7" name="Message" class="form-control" id="exampleInputPassword1" placeholder=""
-                      required></textarea>
-                  </div>
-                </div>
-              </div>
-              <div data-netlify-recaptcha="true"></div>
-              <div>
-                <button id="submit-btn" type="submit" class="btn btn-primary">
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
       </div>
-    </div>
-    <!-- /container -->
-  </section>
+    </section>
 
-  <section id="footer">
-    <div class="container">
-      <div class="row icons">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <ul class="list-unstyled list-inline social text-center">
-            <li class="list-inline-item">
-              <a href="javascript:void();"><i class="fab fa-facebook"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="javascript:void();"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="javascript:void();"><i class="fab fa-github"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="javascript:void();"><i class="fab fa-linkedin"></i></a>
-            </li>
-          </ul>
+    <!-- contact section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="contact-top">
+          <h1>Contact Me</h1>
         </div>
         <hr />
-      </div>
-      <div class="row copy">
-        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-          <p style="font-size: 15px" class="h6">
-            &copy All right Reversed<a class="text-green ml-2" target="_blank"></a>
-          </p>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="contact-left-info">
+              <h5>Address</h5>
+              <p>House No,65, Cooch Behar, West Bengal 736179 India</p>
+            </div>
+
+            <div class="contact-left-info">
+              <h5>Call Me</h5>
+              <a
+                style="text-decoration: none; color: rgb(156, 165, 165);"
+                href="tel:+917001861322"
+              >
+                <p>
+                  <i
+                    style="color: rgb(39, 157, 236); font-size: 25px;"
+                    class="fa fa-mobile"
+                    aria-hidden="true"
+                  ></i>
+                  + 91-7001861322
+                </p>
+              </a>
+
+              <a
+                target="_blank"
+                style="text-decoration: none; color: rgb(156, 165, 165);"
+                href="https://wa.me/917407034208"
+              >
+                <p>
+                  <i
+                    class="fab fa-whatsapp"
+                    style="color: rgb(37, 211, 102); font-size: 25px;"
+                  ></i>
+                  + 91-7407034208
+                </p>
+              </a>
+            </div>
+
+            <div class="contact-left-info">
+              <h5>Email</h5>
+              <a
+                style="text-decoration: none; color: rgb(156, 165, 165);"
+                href="mailto:sounakume@gmail.com?Subject=Hello"
+                target="_top"
+              >
+                <p>
+                  <img
+                    border="0"
+                    alt="Gmail"
+                    src="images/gmail.png"
+                    width="20"
+                    height="20"
+                  />
+                  sounakume@gmail.com
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <!-- /.navbar-collapse -->
+
+            <div class="contact-form">
+              <form name="contact" data-netlify="true" method="POST">
+                <div class="row">
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Your Message</label>
+                      <textarea
+                        rows="7"
+                        name="Message"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                        placeholder=""
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div data-netlify-recaptcha="true"></div>
+                <div>
+                  <button id="submit-btn" type="submit" class="btn btn-primary">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-        <hr />
       </div>
-    </div>
-  </section>
-  <!-- ./Footer -->
+      <!-- /container -->
+    </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
-  <script src="js/b4_sidebar.js"></script>
-  <script src="js/index.js"></script>
-</body>
+    <section id="footer">
+      <div class="container">
+        <div class="row icons">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <ul class="list-unstyled list-inline social text-center">
+              <li class="list-inline-item">
+                <a href="javascript:void();"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="javascript:void();"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="javascript:void();"><i class="fab fa-github"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="javascript:void();"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <hr />
+        </div>
+        <div class="row copy">
+          <div
+            class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white"
+          >
+            <p style="font-size: 15px" class="h6">
+              &copy All right Reversed<a
+                class="text-green ml-2"
+                target="_blank"
+              ></a>
+            </p>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </section>
+    <!-- ./Footer -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/b4_sidebar.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

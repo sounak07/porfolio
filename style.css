@@ -86,17 +86,17 @@ body {
   padding: 0 15px;
 }
 
-.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show > .nav-link {
+.navbar-dark .navbar-nav .show>.nav-link {
   font-weight: bold;
 }
 
-.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show > .nav-link:hover {
+.navbar-dark .navbar-nav .show>.nav-link:hover {
   font-weight: 800;
 }
 
@@ -140,7 +140,7 @@ h2.heading {
 
 .skills {
   padding: 70px 0;
-  background: url('images/new-min.jpg');
+  background: url(images/new-min.jpg);
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -154,7 +154,14 @@ h2.heading {
 /* team section */
 
 #team {
-  background: url(images/compe-min.jpg);
+  background: #114357;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F29492, #114357);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F29492, #114357);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 .btn-primary:hover,
@@ -552,6 +559,7 @@ h3.heading span {
   display: inline-block;
 }
 
+
 @media (max-width: 767px) {
   #footer h5 {
     padding-left: 0;
@@ -591,6 +599,7 @@ h3.heading span {
 }
 
 @media (max-width: 480px) {
+
   a.banner-button2,
   a.banner-button1,
   a.banner-button {
@@ -600,6 +609,7 @@ h3.heading span {
 }
 
 @media (max-width: 415px) {
+
   .banner-bottom,
   .banner,
   .inner-sec-layer {
