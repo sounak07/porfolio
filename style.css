@@ -115,6 +115,11 @@ body {
   font-size: 100px;
 }
 
+.navbar-brand {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
 #logo {
   box-sizing: border-box;
   margin-bottom: 0px;
@@ -123,7 +128,7 @@ body {
   /* margin-top: 5px; */
   width: 50px;
   height: 50px;
-  background-image: url(images/fd.png);
+  background-image: url(images/lg1.png);
 }
 
 .navbar.transparent.navbar-expand-md.navbar-dark.sidebarNavigation {
